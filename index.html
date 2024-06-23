@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Mykola Tarasenko's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mykola Tarasenko's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mykola Tarasenko's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Mikola Tarasenko's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#blog">See Career</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Mykola Tarasenko</span>
+            <span>Software Engineer</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            A Front-end software engineer 
+            <span style="display: block;">who builds <b style="font-size: 130%;">rich</b>, <i style="font-size: 130%;">accessible</i>, and <u style="font-size: 130%;">performant</u> websites.</span>
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Contact me</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Trusted by</h2>
+          <div class="logos">
+            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/stripe.svg"
+                alt="Ideacraft"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/datastax.svg"
+                alt="Golden grid"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coke.svg"
+                alt="Theia"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/gm.svg"
+                alt="General motors"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shares.svg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shopify.svg"
+                alt="Shopify"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/agency-elevation.svg"
+                alt="Agency elevation"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/gitlab.svg"
+                alt="Ron jones"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/duolingo.svg"
+                alt="Mighty furniture's"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coyote.svg"
+                alt="Bulls eye"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/astrato.svg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/mercado.svg"
+                alt="Fastlane"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">My Portfolio</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Point2 Homes</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Project description - Frontend development PSD-to-HTML
+                  project continuation :
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>google speed 100/100</li>
+                  <li>for development used Gulp, SCSS, bootstrap4, npm</li>
+                  <li>best responsive practic</li>
+                  <li>optimization images and used webp</li>
+                  <li>definition user geolocation</li>
+                  <li>AJAX form submission</li>
+                  <li>interaction with the designer</li>
+                </ol>              
+              </div>
+
+              <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">                
+                <img                  
+                  loading="lazy"
+                  src="assets/images/work/point2.jpg"
+                  alt="point2"
+                />
+              </picture>
+            </div>
+            <div class="work-box" id="medical">
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/medical.png"
+                  alt="portfolio template"
+                />
+              </picture>
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Medical</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">Project description. Frontend development:</p>
+                <ol class="work-technologies">
+                  <li> PSD to html</li>
+                  <li>best responsive practic</li>
+                  <li>search icon for font</li>
+                  <li>optimization images</li>
+                  <li>6 pages</li>
+                  <li>Google maps API</li>
+                  
+                </ol>                
+              </div>
+         <!-- Update img src and alt attribute  -->
+              
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">MyMottiv</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Project description. - Supported projects and fixed bugs.
+                </p>
+                <ol class="work-technologies">
+                  <li>Sprint planning</li>
+                  <li>Created new layouts</li>
+                  <li>Connected and configured plugins</li>
+                  <li>Created a layout for the email letters</li>
+                  <li>Set up CSS, JS code analyzers and linters</li>
+                  <li>Worked with API</li>
+                  <li>Fixed system flaws</li>
+                  <li>Participated in the code review process</li>
+                </ol>                
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/mymotive.png"
+                  alt="contribute dev"                  
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="blog">My Work Experience</h2>
+          <div class="article-boxes">
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">🥉 Frontend Developer, Wibbitz</h3>                  
+                  <h5 style="margin-top: 10px;">
+                    July 2016 – November 2018
+                    <span style="display: block;">New York, NY, United States</span>
+                  </h5>                  
+                  <div class="article-text">
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Designed and developed intuitive, responsive websites utilizing HTML, CSS, and JavaScript,
+                        complying with industry best practices and accessibility standards.
+                      </div>                      
+                    </div> 
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Implemented various third-party APIs into web applications, enabling seamless interaction
+                        between data sources and services.
+                      </div>                      
+                    </div> 
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Regularly communicated with clients to gather requirements, provide progress updates,
+                        and ensure complete satisfaction with end products.
+                      </div>                      
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">
+                    🥈 Full Stack Developer, Celadon 
+                  </h3>
+                  <h5 style="margin-top: 10px;">
+                    February 2019 – November 2020
+                    <span style="display: block;">New York, NY, United States</span>
+                  </h5>
+                  <div class="article-text">                   
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Developed a comprehensive Web Development platform for a high-profile client, including
+                        both frontend and backend systems, using the latest technologies and frameworks.
+                      </div>                      
+                    </div> 
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Created responsive and accessible user interfaces with React, improving application
+                        usability and overall user experience.
+                      </div>                      
+                    </div> 
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Collaborated with cross-functional teams to incorporate requirements and provide full
+                        stack development support for optimized user experiences.
+                      </div>                      
+                    </div>                                     
+                  </div>
+                </div>                
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">🥇 Full Stack Engineer, Clearview AI</h3>
+                  <h5 style="margin-top: 10px;">
+                    February 2021 – April 2023
+                    <span style="display: block;">New York, NY, United States</span>
+                  </h5>
+                  <div class="article-text">
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Played a key role in the development of a high-traffic e-commerce
+                        platform, utilizing a full stack of technologies, including React, Node, TypeScript, and AWS.
+                      </div>                      
+                    </div>
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Collaborated with backend engineers to create and optimize API endpoints for various user
+                        features, ensuring seamless integration between frontend and backend components.
+                      </div>
+                    </div>
+                    <div style="display: flex;">
+                      <div style="margin-right: 5px;">✅</div>
+                      <div>
+                        Utilized DevOps principles to create an agile and efficient development pipeline, allowing
+                        for rapid deployment of new features and bug fixes.
+                      </div>
+                    </div>                                       
+                  </div>
+                </div>                
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Skill Sets</h2>
+          <div class="skills-imgs">
+                <img src="assets/images/skills/icons8-react-native-144.png" alt="React" class="skills-img" loading="lazy" title="React" id="React">
+                <img src="assets/images/skills/icons8-redux-144.png" alt="Redux" class="skills-img" loading="lazy" title="Redux">
+                <img src="assets/images/skills/icons8-vue-js-144.png" alt="Vue" class="skills-img" loading="lazy" title="Vue">
+                <img src="assets/images/skills/icons8-angularjs-144.png" alt="Angular" class="skills-img" loading="lazy" title="Web Angular">
+                <img src="assets/images/skills/icons8-nextjs-144.png" alt="Next" class="skills-img" loading="lazy" title="Next">
+                <img src="assets/images/skills/icons8-express-js-144.png" alt="Express" class="skills-img" loading="lazy" title="Express">
+                <img src="assets/images/skills/icons8-laravel-96.png" alt="Laravel" class="skills-img" loading="lazy" title="Laravel">
+                <img src="assets/images/skills/icons8-django-128.png" alt="Django" class="skills-img" loading="lazy" title="Django">
+                <img src="assets/images/skills/icons8-python-144.png" alt="Python" class="skills-img" loading="lazy" title="Python">
+                <img src="assets/images/skills/icons8-mongodb-144.png" alt="MongoDB" class="skills-img" loading="lazy" title="MongoDB">
+                <img src="assets/images/skills/icons8-mysql-144.png" alt="MySQL" class="skills-img" loading="lazy" title="MySQL">
+                <img src="assets/images/skills/icons8-shopify-144.png" alt="Shopify" class="skills-img" loading="lazy" title="Shopify">
+                <img src="assets/images/skills/icons8-webflow-144 (1).png" alt="Webflow" class="skills-img" loading="lazy" title="Webflow">
+                <img src="assets/images/skills/icons8-github-144.png" alt="GitHub" class="skills-img" loading="lazy" title="GitHub">
+                <img src="assets/images/skills/icons8-graphql-144.png" alt="Graph QL" class="skills-img" loading="lazy" title="Graph QL">
+                <img src="assets/images/skills/icons8-html-5-144.png" alt="Html5" class="skills-img" loading="lazy" title="Html5">                 
+                <img src="assets/images/skills/icons8-css-144.png" alt="CSS" class="skills-img" loading="lazy" title="CSS">                 
+                <img src="assets/images/skills/icons8-node-js-144.png" alt="Node" class="skills-img" loading="lazy" title="Node">
+                <img src="assets/images/skills/icons8-tailwindcss-144.png" alt="TailwindCss" class="skills-img" loading="lazy" title="TailwindCss">
+                <img src="assets/images/skills/icons8-sass-144.png" alt="Sass" class="skills-img" loading="lazy" title="Sass">                                
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
+
+      <section>
+        <h2 class="h2">Education</h2>
+        <div class="container" style="display: flex; margin-top: 100px;">
+          <div class="edu-career" style="width: 50%; float: left;">
+            <h3>Bachelor of Computer Science</h3>
+            <h5>Kyiv National University of Technologies and Design (KNUTD)</h5>
+            <p>2012 - 2016</p>
+          </div>
+          <div id="eduImg" class="University" style="width: auto; float: right;">
+            <picture class="work-img">
+              <img 
+                loading="lazy"
+                src="assets/images/Kyiv National University of Technologies and Design.png" 
+                alt="Kyiv National University of Technologies and Design"               
+              />
+            </picture>
+          </div>          
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available now
+              </strong>
+              <p class="contact-text">
+                As a software engineer, Tarasenko crafts web interfaces and design systems 
+                with a deep passion for accessibility and performance. 
+                He delights in coding from scratch and transforming ideas into vibrant, functional realities.
+              </p>
+              <p class="contact-text">
+                As a dedicated problem solver who contributes to the latest technological development, 
+                he is committed to providing the best web solutions to meet the unique needs of each project.
+              </p>
+              <!-- Replace src with your signatures and name -->
+              
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/Chipbraveman" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <!-- <li class="footer-link">
+                <a title="Codepen" href="https://github.com/Chipbraveman" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/codepen.svg"
+                    alt="Codepen"
+                /></a>
+              </li>      -->
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/Chipbraveman">Mykola Tarasenko.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
